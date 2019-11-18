@@ -2,7 +2,7 @@ package controller
 
 import (
 	"encoding/json"
-	"github.com/pluralsight/webservice/models"
+	"github.com/sharathnasa/webservice/models"
 	"net/http"
 	"regexp"
 	"strconv"
@@ -130,6 +130,7 @@ func (uc *userController) parseRequest(r *http.Request) (models.User, error) {
 
 //new way of creating the constructor(append with new keyword)
 // This constructor return the route endpoint
+// there is no constructor concept in GO
 func newUserController() *userController {
 	return &userController{userIdPattern: regexp.MustCompile(`^/user/(\d+)/?`)}
 }

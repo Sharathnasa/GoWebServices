@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/pluralsight/webservice/controller"
+	"github.com/sharathnasa/webservice/controller"
 	"net/http"
 )
 

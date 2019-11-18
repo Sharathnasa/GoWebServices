@@ -1,10 +1,10 @@
-package pointer
+package main
 
 import (
 	"fmt"
 )
 
-func yoy() {
+func main() {
 
 	// This is one way of using pointer
 	// this is how we declare the pointers in GO!

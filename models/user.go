@@ -12,14 +12,17 @@ type User struct {
 }
 
 var (
+	//creating collection of users
 	users  []*User
 	nextID = 1
 )
 
+//returns user object
 func GetUsers() []*User {
 	return users
 }
 
+//This returns 2 values 1. user object and then error
 func AddUser(user User) (User, error) {
 	if user.ID != 0 {
 		return User{}, errors.New("New User must not include id or it must be set to zero")
